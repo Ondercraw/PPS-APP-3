@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <div class="nav-bar">
+    <img style="width: 70px;" src="./../../../assets\Icono_Alarma-removebg-preview.jpg" />
+    <div class="button-container">
+      <ion-button (click)="OnLogoutClick()" expand="block" fill="clear" shape="round" [disabled]="alarmaActivada">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+  <div class="alarm-container">
+    <input type="checkbox" id="check" [disabled]="true" [checked]="alarmaActivada">
+    <label (click)="startWatching()" for="check" class="button1"></label>
+  </div>
+</ion-content>
